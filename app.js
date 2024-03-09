@@ -1,17 +1,20 @@
-// Task # 32 : Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
-// • Make a list of five or more usernames called current_users.
-// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
-// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
-// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
-var current_users = ["admin", "Eric", "Umer", "fatima", "Nadeem"];
-var new_users = ["admin", "fatima", "Nadeem", "Zainab", "Asiya"];
-var current_users_lower = current_users.map(function (user) { return user.toLowerCase(); });
-for (var _i = 0, new_users_1 = new_users; _i < new_users_1.length; _i++) {
-    var new_user = new_users_1[_i];
-    if (current_users_lower.includes(new_user.toLocaleLowerCase())) {
-        console.log("sorry ".concat(new_user, ", that name is taken"));
+// Task # 33 : Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// • Store the numbers 1 through 9 in a array.
+// • Loop through the array.
+// • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+    var number = numbers_1[_i];
+    if (number === 1) {
+        console.log("".concat(number, "st"));
+    }
+    else if (number === 2) {
+        console.log("".concat(number, "nd"));
+    }
+    else if (number === 3) {
+        console.log("".concat(number, "rd"));
     }
     else {
-        console.log("Yes ".concat(new_user, ", is still in avaliable list"));
+        console.log("".concat(number, "th"));
     }
 }

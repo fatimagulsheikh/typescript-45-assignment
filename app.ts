@@ -1,21 +1,21 @@
-// Task # 32 : Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
-// • Make a list of five or more usernames called current_users.
+// Task # 33 : Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// • Store the numbers 1 through 9 in a array.
 
-// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
+// • Loop through the array.
 
-// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
+// • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
-// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
+let numbers : number [] = [1,2,3,4,5,6,7,8,9]
 
-let current_users : string [] = ["admin", "Eric", "Umer", "fatima", "Nadeem"]
-let new_users : string [] = ["admin", "fatima", "Nadeem", "Zainab", "Asiya"]
+for (let number of numbers)
 
-let current_users_lower : string [] =current_users.map(user => user.toLowerCase())
+if (number === 1) {
+    console.log(`${number}st`)
+} else if (number === 2) {
+    console.log(`${number}nd`)
 
-for (let new_user of new_users) {
-    if (current_users_lower.includes (new_user.toLocaleLowerCase())) {
-        console.log(`sorry ${new_user}, that name is taken`)
-    }else {
-        console.log(`Yes ${new_user}, is still in avaliable list`)
-    }
+} else if (number === 3) {
+    console.log(`${number}rd`)
+} else {
+    console.log(`${number}th`)
 }
