@@ -1,23 +1,21 @@
-// // Task # 31 : No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-// • If the list is empty, print the message We need to find some users!
+// Task # 32 : Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+// • Make a list of five or more usernames called current_users.
 
-// • Remove all of the usernames from your array, and make sure the correct message is printed.
+// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
 
-let users : string [] = ["admin", "eric", "haseeb", "nadeem", "fatima"]
+// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 
-// if (users.length === 0) {
-//    console.log ("We need to find some users!")
-// } else {
-//     for (let user of users) { 
-//         if ( user === "admin") {
-//                 console.log("Hello admin, would you like to see a dtatus report?")
-//         } else {
-//             console.log(`Hello ${user}, thank you for logging in again`)
-//         }
-//     }
-// }
+// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 
-users = []
-if (users.length === 0) {
-    console.log ("we need to find some users!")
+let current_users : string [] = ["admin", "Eric", "Umer", "fatima", "Nadeem"]
+let new_users : string [] = ["admin", "fatima", "Nadeem", "Zainab", "Asiya"]
+
+let current_users_lower : string [] =current_users.map(user => user.toLowerCase())
+
+for (let new_user of new_users) {
+    if (current_users_lower.includes (new_user.toLocaleLowerCase())) {
+        console.log(`sorry ${new_user}, that name is taken`)
+    }else {
+        console.log(`Yes ${new_user}, is still in avaliable list`)
+    }
 }
