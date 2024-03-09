@@ -1,27 +1,24 @@
 "use strict";
-// Task # 16 : More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
-// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
-// • Add one new guest to the beginning of your array.
-// • Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
-let guestArr = ["Nadeem", "Fatima", "Ali", "Uzma"];
-let canNotAttend = "Ali";
-let newGuest = "Jawad";
-guestArr[guestArr.indexOf(canNotAttend)] = newGuest;
-// console.log(guestArr)
-// guestArr.map((items) =>
-// console.log(`Dear ${items}, I found a bigger dinner so I am invited more people.`)
-// );
-// part 2 Began
-let guestBeg = "Umer";
-guestArr.unshift(guestBeg);
-// console.log(guestArr)
-// part 3 Middle
-let middleGust = "Zainab";
-let middleindex = guestArr.length / 3;
-guestArr.splice(middleindex, 0, middleGust);
-// console.log(guestArr)
-// part 4 append
-guestArr.push("Irfan");
-// console.log(guestArr)
-//part 5 
-guestArr.map((items) => console.log(` Dear ${items}, you are invited in the more people list on dinner`));
+// Task # 17 :Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+// • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+// • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+// • Print a message to each of the two people still on your list, letting them know they’re still invited.
+// • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+// Initial list of guests
+let guests = ["Irfan", "Ayesha"];
+// Informing that only two people can be invited
+// console.log("Due to limited space, only two people can be invited for dinner.");
+// // Removing guest until only two names remain
+// while (guests.length > 2) {
+//    const removedGuest = guests.pop();
+//    console.log('Sorry, ${removedGuest}, you are no longer invited to dinner.');
+// }
+// // printing invitations to the remaining two guests
+guests.forEach((guest) => {
+    console.log(`Dear ${guest}, you'are still invited to dinner.`);
+});
+// // Removing the last two names from the list
+guests.pop();
+guests.pop();
+// // Printing the final list to conform it's empty
+console.log("Final guest list:", guests);
