@@ -1,43 +1,66 @@
-// // Task # 23 : Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+// // Task # 24 : More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
 
-// let car = 'subaru';
+// • Tests using the lower case function
 
-// console.log("Is car == 'subaru'? I predict True.")
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
 
-// console.log(car == 'subaru')
+// • Tests using "and" and "or" operators
 
-// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+// • Test whether an item is in a array
 
-// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+// • Test whether an item is not in a array
 
-let car = "subaru";
+let name_1 : string = "fatima"
+let name_2 : string = "fatima gul"
+let name_3 : string = " miss fatima gul sheikh"
 
-console.log("is car == 'subaru'? predict true")
-console.log(car == 'subaru')
+// if (name_1 == name_3){
+//    console.log("names are equal")
+// } else {
+//     console.log("names are not equal")
+// }
 
-console.log("is car != 'honda city'? predict true")
-console.log(car != 'honda city')
+// if (name_1 != name_2){
+//} console.log("names are equal")
+// }
 
-console.log("is car == 'subaru'? predict false")
-console.log(car =='subaru')
+// if (name_1 != name_3) {
+// console.log("names are equal")
+// }
 
-console. log("is car == 'SUBARU'? predict flase")
-console.log(car == 'SUBARU')
+let age_1 : number = 18
+let age_2 : number = 22
 
-console.log("is car.lenght == 3? predict false")
-console.log(car.length == 3)
+// if (age_1 == 18){
+//     console.log("eligible for vote")
+// }
 
-console.log("is car.lenght != 10? predict true")
-console.log(car.length != 10)
+// if (age_1 != 22){
+//     console.log("eligible for vote in older category")
+// }
 
-console.log("is 10 > 45 ? predict false")
-console.log(10 > 45)
+// if (age_1 <= age_2) {
+//     console.log("younger")
+// }
 
-console.log("is 3 <= 2 ? predict false")
-console.log(3 <= 2)
+// if (age_2 <= age_1) {
+//     console.log("older")
+// }
 
-console.log("is 72 .= 83 ? predict fals")
-console.log(72 >= 83)
+// if (age_1 == 18 && age_2 == 22) {
+//     console.log(" person is eligible for vote")
+// }
 
-console.log("is car == 'subaru' && car.lenght == 6? predict true ")
-console.log(car == 'subaru' && car.length ==6)
+// if (age_1 == 18 || age_2 != 22) {
+//     console.log(" person is eligible not for vote")
+// }
+
+let country : string [] = ["pakistan", "turkey", "japan", "china"]
+// if (country.includes("pakistan")){
+//    console.log("pakistan is in country list")
+//}
+
+if (!country.includes ("america")) {
+    console.log("america is not in an array")
+}

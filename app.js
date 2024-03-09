@@ -1,27 +1,48 @@
-// // Task # 23 : Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
-// let car = 'subaru';
-// console.log("Is car == 'subaru'? I predict True.")
-// console.log(car == 'subaru')
-// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
-// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
-var car = "subaru";
-console.log("is car == 'subaru'? predict true");
-console.log(car == 'subaru');
-console.log("is car != 'honda city'? predict true");
-console.log(car != 'honda city');
-console.log("is car == 'subaru'? predict false");
-console.log(car == 'subaru');
-console.log("is car == 'SUBARU'? predict flase");
-console.log(car == 'SUBARU');
-console.log("is car.lenght == 3? predict false");
-console.log(car.length == 3);
-console.log("is car.lenght != 10? predict true");
-console.log(car.length != 10);
-console.log("is 10 > 45 ? predict false");
-console.log(10 > 45);
-console.log("is 3 <= 2 ? predict false");
-console.log(3 <= 2);
-console.log("is 72 .= 83 ? predict fals");
-console.log(72 >= 83);
-console.log("is car == 'subaru' && car.lenght == 6? predict true ");
-console.log(car == 'subaru' && car.length == 6);
+// // Task # 24 : More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+// • Tests using the lower case function
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+// • Tests using "and" and "or" operators
+// • Test whether an item is in a array
+// • Test whether an item is not in a array
+var name_1 = "fatima";
+var name_2 = "fatima gul";
+var name_3 = " miss fatima gul sheikh";
+// if (name_1 == name_3){
+//    console.log("names are equal")
+// } else {
+//     console.log("names are not equal")
+// }
+// if (name_1 != name_2){
+//} console.log("names are equal")
+// }
+// if (name_1 != name_3) {
+// console.log("names are equal")
+// }
+var age_1 = 18;
+var age_2 = 22;
+// if (age_1 == 18){
+//     console.log("eligible for vote")
+// }
+// if (age_1 != 22){
+//     console.log("eligible for vote in older category")
+// }
+// if (age_1 <= age_2) {
+//     console.log("younger")
+// }
+// if (age_2 <= age_1) {
+//     console.log("older")
+// }
+// if (age_1 == 18 && age_2 == 22) {
+//     console.log(" person is eligible for vote")
+// }
+// if (age_1 == 18 || age_2 != 22) {
+//     console.log(" person is eligible not for vote")
+// }
+var country = ["pakistan", "turkey", "japan", "china"];
+// if (country.includes("pakistan")){
+//    console.log("pakistan is in country list")
+//}
+if (!country.includes("america")) {
+    console.log("america is not in an array");
+}
