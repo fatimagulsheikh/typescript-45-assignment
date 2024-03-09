@@ -1,5 +1,5 @@
 {
-  "name": "task_43(unchanged-magicians)",
+  "name": "task_44(sandwiches)",
   "version": "1.0.0",
   "description": "in this typescript file we solved all 45 assignment of govorner sindh it initative",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "Fatima (Roll No:00188323",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^20.11.25"
+    "@types/node": "^20.11.24"
   }
 }

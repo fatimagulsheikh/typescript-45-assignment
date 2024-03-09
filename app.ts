@@ -1,19 +1,16 @@
-// // Task # 42 : Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+// // Task # 44 : Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 
-function show_magicians(magicians: string[]): void {
+function sandwich(...items: string[]): void {
+    console.log("Sandwich order:")
 
-    for (const magician of magicians) {
-        console.log(magician.charAt(0).toUpperCase() + magician.slice(1));
+    for (let i = 0; i < items.length; i++) {
+        console.log(`- ${items[i]}`)
     }
 }
 
-function make_great(magicians: string[]): void {
-    for (let i = 0; i < magicians.length; i++) {
-        magicians[i] = magicians[i] + ' the great'
 
-    }
-}
+console.log("enjoy your sandwich fatima")
 
-const magicians2: string[] = ["ali", "yousuf", "taimoor"];
-make_great(magicians2)
-show_magicians(magicians2)
+sandwich('capsicum', 'tomato', 'chicken')
+sandwich('beef', 'cheese')
+sandwich('garlic chicken', 'mayo sauce')
