@@ -1,13 +1,27 @@
 "use strict";
-//Task # 15 : Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
-Object.defineProperty(exports, "__esModule", { value: true });
-//• Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
-//• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
-//• Print a second set of invitation messages, one for each person who is still in your list.
-var guestArr = ["Nadeem", "Fatima", "Mehwish", "Gul"];
-var canNotAttend = "Gul";
-var newGuest = "Undifind";
+// Task # 16 : More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+// • Add one new guest to the beginning of your array.
+// • Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+let guestArr = ["Nadeem", "Fatima", "Ali", "Uzma"];
+let canNotAttend = "Ali";
+let newGuest = "Jawad";
 guestArr[guestArr.indexOf(canNotAttend)] = newGuest;
-guestArr.map(function (items) {
-    return console.log("Dear ".concat(items, ", you are invited to the dinner."));
-});
+// console.log(guestArr)
+// guestArr.map((items) =>
+// console.log(`Dear ${items}, I found a bigger dinner so I am invited more people.`)
+// );
+// part 2 Began
+let guestBeg = "Umer";
+guestArr.unshift(guestBeg);
+// console.log(guestArr)
+// part 3 Middle
+let middleGust = "Zainab";
+let middleindex = guestArr.length / 3;
+guestArr.splice(middleindex, 0, middleGust);
+// console.log(guestArr)
+// part 4 append
+guestArr.push("Irfan");
+// console.log(guestArr)
+//part 5 
+guestArr.map((items) => console.log(` Dear ${items}, you are invited in the more people list on dinner`));
