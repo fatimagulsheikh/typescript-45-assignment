@@ -1,13 +1,13 @@
 {
-  "name": "task_44(sandwiches)",
+  "name": "typescript and node js 45 assignment",
   "version": "1.0.0",
-  "description": "in this typescript file we solved all 45 assignment of govorner sindh it initative",
+  "description": "in this typescript file we solved all 45 assignment of govornor sindh it initative",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Fatima (Roll No:00188323",
+  "author": "Fatima (Roll No: 00188323",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.24"
