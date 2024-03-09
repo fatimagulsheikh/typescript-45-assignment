@@ -1,4 +1,5 @@
-// // Task # 21 : They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// // Task_22 : Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
-let person: {name: string, fname: string , age: number} = {name: "Fatima", fname: "female",age: 23}
-console.log(person)
+const days : string [] = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+// console.log(days{7});
+console.log(days[6]);
