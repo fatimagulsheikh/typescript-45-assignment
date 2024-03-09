@@ -1,12 +1,14 @@
-// // Task # 39 : City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
-// "Lahore, Pakistan"
-// Call your function with at least three city-country pairs, and print the value that’s returned.
-function citycountry(city, country) {
-    return "".concat(city, ", ").concat(country);
+// // Task # 40 : Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+function makeAlbum(artist, title) {
+    var dictionaries = {
+        artist: artist.charAt(0).toUpperCase() + artist.slice(1),
+        title: title.charAt(0).toUpperCase() + title.slice(1)
+    };
+    return dictionaries;
 }
-var c1 = citycountry('lahore', 'pakistan');
-var c2 = citycountry('tokyo', 'japan');
-var c3 = citycountry('paris', 'france');
-console.log(c1);
-console.log(c2);
-console.log(c3);
+var album = makeAlbum("Nadeem", "light");
+console.log(album);
+album = makeAlbum("Umer", "seenbreez");
+console.log(album);
+album = makeAlbum("Ali", "red wave");
+console.log(album);
