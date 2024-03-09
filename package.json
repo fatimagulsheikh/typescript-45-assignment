@@ -1,5 +1,5 @@
 {
-  "name": "task_22(internal-error)",
+  "name": "task_23(conditional-tests)",
   "version": "1.0.0",
   "description": "in this typescript file we solved all 45 assignment of govorner sindh it initative",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Fatima (Roll No:00188323)",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^20.11.24"
   }
 }
