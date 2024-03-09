@@ -1,5 +1,14 @@
 {
+  "name": "task_11(names)",
+  "version": "1.0.0",
   "description": "in this typescript file we solved all 45 assignment of govorner sindh it initative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fatima (Roll No:00188323)",
+  "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.19"
   }
