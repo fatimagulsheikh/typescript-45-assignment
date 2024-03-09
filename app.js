@@ -1,10 +1,8 @@
-// // Task # 37 : Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
-function makeshirt(siza, text) {
-    if (siza === void 0) { siza = 'large'; }
-    if (text === void 0) { text = ' I Love typescript'; }
-    console.log("you have order a ".concat(siza, ", shirt that says ").concat(text));
+// // Task # 38: Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+function describe_city(city, country) {
+    if (country === void 0) { country = 'Pakistan'; }
+    console.log("".concat(city, " is in ").concat(country));
 }
-// makeshirt();
-// makeshirt('medium')
-//different message
-makeshirt('small', 'I need a big shirt to wear');
+describe_city('karachi');
+describe_city('france', 'europe');
+describe_city('lahore', 'is in punjab');
