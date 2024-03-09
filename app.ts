@@ -1,5 +1,19 @@
-/*Task # 14 : Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.*/
+//Task # 15 : Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 
-let guestArr : string[] = ["Abdul Rehman", "Rabia", "Urwa"];
+import { INSPECT_MAX_BYTES } from "buffer";
 
-guestArr.map((items) => (console.log(`Dear ${items}, You are invited to the dinner`)));
+//• Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+
+//• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+
+//• Print a second set of invitation messages, one for each person who is still in your list.
+
+let guestArr : string[] = ["Nadeem", "Fatima", "Mehwish", "Gul"];
+let canNotAttend : string = "Gul"
+
+let newGuest : string = "Undifind"
+
+guestArr [guestArr.indexOf(canNotAttend)] = newGuest;
+
+guestArr.map((items) =>
+console.log(`Dear ${items}, you are invited to the dinner.`));
