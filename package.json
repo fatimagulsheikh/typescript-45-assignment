@@ -1,5 +1,5 @@
 {
-  "name": "task_35(animals)",
+  "name": "task_36(t-shirt)",
   "version": "1.0.0",
   "description": "in this typescript file we solved all 45 assignment of govorner sindh it initative",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Fatima (Roll No: 00188323)",
+  "author": "Fatima (Roll No:00188323)",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.24"
