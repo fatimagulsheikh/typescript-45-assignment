@@ -1,10 +1,5 @@
 "use strict";
-/* Task # 13 : Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”*/
+/*Task # 14 : Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.*/
+let guestArr  = ["Abdul Rehman", "Rabia", "Urwa"];
 
-
-let transportation = ["heavybike", "car", "bicycla", "aeroplane"];
-
-console.log(`"I would like to own a" : ${transportation[0]}`);
-console.log(`"I would like to own a" : ${transportation[1]}`);
-console.log(`"I would like to own a" : ${transportation[2]}`);
-console.log(`"I would like to own a" : ${transportation[3]}`);
+guestArr.map((items) => (console.log(`Dear ${items}, You are invited to the dinner`)));
